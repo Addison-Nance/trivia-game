@@ -1,26 +1,25 @@
-.col-md-8{
-    height:600px;
-    background-color:white;
-    margin-top:0px;
-    text-align:center;
+.col-md-8 {
+  height: 600px;
+  background-color: white;
+  margin-top: 0px;
+  text-align: center;
 }
-.row{
-    margin-left:0px;
-    margin-right:0px;
+.row {
+  margin-left: 0px;
+  margin-right: 0px;
 }
-.titlecard{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-  }
+.titlecard {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
 
-    .form-check {
-        display:inline;
-        margin:2px;
-
-    }
-    .question{
-        margin-top:10px;
-        margin-bottom:10px;
-    }
+.form-check {
+  display: inline;
+  margin: 2px;
+}
+.question {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}

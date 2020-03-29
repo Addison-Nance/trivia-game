@@ -2,6 +2,7 @@
 <html>
   <head>
     <title>Trivia Game!</title>
+
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
@@ -25,238 +26,277 @@
       <div class="col-md-2"></div>
       <div class="col-md-8">
         <div class="countdown-timer container-fluid" id="countdown">
-          Time Left: 30
+          Time Left: 10
         </div>
-        <div class="questions">
-          <div class="question1 question"><h2>Who shot first?</h2>
-          <div class="form-check">
-            <input
-              class="form-check-input"
-              type="radio"
-              name="answerradio"
-              id="question1-1"
-              value="answer1"
-            />
-            <label class="from-check-label" for="answerradio1">Han Solo</label>
+        <div class="grades" id="gradeBox">
+          <div class="correct" id="correct">Correct:</div>
+          <div class="incorrect" id="incorrect">Incorrect:</div>
+        </div>
+        <div class="yoda" id="yoda"></div>
+        <div class="questions" id="question0">
+          <div class="question1 question">
+            <h2>Who shot first?</h2>
+            <form>
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="answerradio"
+                id="question1-1"
+                value="answer1"
+              />
+              <label class="from-check-label" for="answerradio1"
+                >Han Solo</label
+              >
+            </div>
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="answerradio"
+                id="question1-2"
+                value="answer2"
+              />
+              <label class="from-check-label" for="answerradio1"
+                >Darth Vader</label
+              >
+            </div>
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="answerradio"
+                id="question1-3"
+                value="answer3"
+              />
+              <label class="from-check-label" for="answerradio1">Greedo</label>
+            </div>
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="answerradio"
+                id="question1-4"
+                value="answer4"
+              />
+              <label class="from-check-label" for="answerradio1">Rei</label>
+            </div>
+            </form>
           </div>
-          <div class="form-check">
-            <input
-              class="form-check-input"
-              type="radio"
-              name="answerradio"
-              id="question1-2"
-              value="answer2"
-            />
-            <label class="from-check-label" for="answerradio1"
-              >Darth Vader</label
-            >
+          <div class="question2 question">
+            <h2>Who is Luke's father?</h2>
+            <form>
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="answerradio"
+                id="question2-1"
+                value="answer1"
+              />
+              <label class="from-check-label" for="answerradio1"
+                >Darth Vader</label
+              >
+            </div>
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="answerradio"
+                id="question2-2"
+                value="answer2"
+              />
+              <label class="from-check-label" for="answerradio1"
+                >Han Solo</label
+              >
+            </div>
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="answerradio"
+                id="question2-3"
+                value="answer3"
+              />
+              <label class="from-check-label" for="answerradio1"
+                >Boba Fett</label
+              >
+            </div>
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="answerradio"
+                id="question2-4"
+                value="answer4"
+              />
+              <label class="from-check-label" for="answerradio1"
+                >Obi Wan Kanobi</label
+              >
+            </div>
+            </form>
           </div>
-          <div class="form-check">
-            <input
-              class="form-check-input"
-              type="radio"
-              name="answerradio"
-              id="question1-3"
-              value="answer3"
-            />
-            <label class="from-check-label" for="answerradio1">Greedo</label>
+          <div class="question3 question">
+            <h2>What was the original title of "Return of the Jedi"?</h2>
+            <form>
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="answerradio"
+                id="question3-1"
+                value="answer1"
+              />
+              <label class="from-check-label" for="answerradio1"
+                >"The Jedi Returns"</label
+              >
+            </div>
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="answerradio"
+                id="question3-2"
+                value="answer2"
+              />
+              <label class="from-check-label" for="answerradio1"
+                >"Revenge of the Jedi"</label
+              >
+            </div>
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="answerradio"
+                id="question3-3"
+                value="answer3"
+              />
+              <label class="from-check-label" for="answerradio1"
+                >"Obi Wan's Return"</label
+              >
+            </div>
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="answerradio"
+                id="question3-4"
+                value="answer4"
+              />
+              <label class="from-check-label" for="answerradio1"
+                >"Rise of Vader"</label
+              >
+            </div>
+            </form>
           </div>
-          <div class="form-check">
-            <input
-              class="form-check-input"
-              type="radio"
-              name="answerradio"
-              id="question1-4"
-              value="answer4"
-            />
-            <label class="from-check-label" for="answerradio1">Rei</label>
+          <div class="question4 question">
+            <form>
+            <h2>What order where the original 6 movies released?</h2>
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="answerradio"
+                id="question4-1"
+                value="answer1"
+              />
+              <label class="from-check-label" for="answerradio1"
+                >2,4,6,3,5</label
+              >
+            </div>
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="answerradio"
+                id="question4-2"
+                value="answer2"
+              />
+              <label class="from-check-label" for="answerradio1"
+                >1,2,3,4,5,6</label
+              >
+            </div>
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="answerradio"
+                id="question4-3"
+                value="answer3"
+              />
+              <label class="from-check-label" for="answerradio1"
+                >6,5,4,3,2,1</label
+              >
+            </div>
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="answerradio"
+                id="question4-4"
+                value="answer4"
+              />
+              <label class="from-check-label" for="answerradio1"
+                >4,5,6,1,2,3</label
+              >
+            </div>
+            </form>
+          </div>
+          <div class="question5 question">
+            <h2>What actor plays Han Solo?</h2>
+            <form>
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="answerradio"
+                id="question5-1"
+                value="answer1"
+              />
+              <label class="from-check-label" for="answerradio1"
+                >Ford Tarus</label
+              >
+            </div>
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="answerradio"
+                id="question5-2"
+                value="answer2"
+              />
+              <label class="from-check-label" for="answerradio1"
+                >Jack Black</label
+              >
+            </div>
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="answerradio"
+                id="question5-3"
+                value="answer3"
+              />
+              <label class="from-check-label" for="answerradio1"
+                >Harrison Ford</label
+              >
+            </div>
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="answerradio"
+                id="question5-4"
+                value="answer4"
+              />
+              <label class="from-check-label" for="answerradio1"
+                >Herbet Ford</label
+              >
+            </div>
+            </form>
           </div>
         </div>
-        <div class="question2 question"><h2>Who is Luke's father?</h2>
-        <div class="form-check">
-          <input
-            class="form-check-input"
-            type="radio"
-            name="answerradio"
-            id="question2-1"
-            value="answer1"
-          />
-          <label class="from-check-label" for="answerradio1">Darth Vader</label>
-        </div>
-        <div class="form-check">
-          <input
-            class="form-check-input"
-            type="radio"
-            name="answerradio"
-            id="question2-2"
-            value="answer2"
-          />
-          <label class="from-check-label" for="answerradio1">Han Solo</label>
-        </div>
-        <div class="form-check">
-          <input
-            class="form-check-input"
-            type="radio"
-            name="answerradio"
-            id="question2-3"
-            value="answer3"
-          />
-          <label class="from-check-label" for="answerradio1">Boba Fett</label>
-        </div>
-        <div class="form-check">
-          <input
-            class="form-check-input"
-            type="radio"
-            name="answerradio"
-            id="question2-4"
-            value="answer4"
-          />
-          <label class="from-check-label" for="answerradio1"
-            >Obi Wan Kanobi</label
-          >
-        </div>
-        </div>
-        <div class="question3 question">
-          <h2>What was the original title of "Return of the Jedi"?</h2>
-        <div class="form-check">
-          <input
-            class="form-check-input"
-            type="radio"
-            name="answerradio"
-            id="question3-1"
-            value="answer1"
-          />
-          <label class="from-check-label" for="answerradio1"
-            >"The Jedi Returns"</label
-          >
-        </div>
-        <div class="form-check">
-          <input
-            class="form-check-input"
-            type="radio"
-            name="answerradio"
-            id="question3-2"
-            value="answer2"
-          />
-          <label class="from-check-label" for="answerradio1"
-            >"Revenge of the Jedi"</label
-          >
-        </div>
-        <div class="form-check">
-          <input
-            class="form-check-input"
-            type="radio"
-            name="answerradio"
-            id="question3-3"
-            value="answer3"
-          />
-          <label class="from-check-label" for="answerradio1"
-            >"Obi Wan's Return"</label
-          >
-        </div>
-        <div class="form-check">
-          <input
-            class="form-check-input"
-            type="radio"
-            name="answerradio"
-            id="question3-4"
-            value="answer4"
-          />
-          <label class="from-check-label" for="answerradio1"
-            >"Rise of Vader"</label
-          >
-        </div>
-        </div>
-        <div class="question4 question">
-          <h2>What order where the original 6 movies released?</h2>
-        <div class="form-check">
-          <input
-            class="form-check-input"
-            type="radio"
-            name="answerradio"
-            id="question4-1"
-            value="answer1"
-          />
-          <label class="from-check-label" for="answerradio1">4,5,6,1,2,3</label>
-        </div>
-        <div class="form-check">
-          <input
-            class="form-check-input"
-            type="radio"
-            name="answerradio"
-            id="question4-2"
-            value="answer2"
-          />
-          <label class="from-check-label" for="answerradio1">1,2,3,4,5,6</label>
-        </div>
-        <div class="form-check">
-          <input
-            class="form-check-input"
-            type="radio"
-            name="answerradio"
-            id="question4-3"
-            value="answer3"
-          />
-          <label class="from-check-label" for="answerradio1">6,5,4,3,2,1</label>
-        </div>
-        <div class="form-check">
-          <input
-            class="form-check-input"
-            type="radio"
-            name="answerradio"
-            id="question4-4"
-            value="answer4"
-          />
-          <label class="from-check-label" for="answerradio1">2,4,6,3,5</label>
-        </div>
       </div>
-    </div>
-      <div class="question5 question">
-        <h2>What actor plays Han Solo?</h2>
-      <div class="form-check">
-        <input
-          class="form-check-input"
-          type="radio"
-          name="answerradio"
-          id="question5-1"
-          value="answer1"
-        />
-        <label class="from-check-label" for="answerradio1">Ford Tarus</label>
-      </div>
-      <div class="form-check">
-        <input
-          class="form-check-input"
-          type="radio"
-          name="answerradio"
-          id="question5-2"
-          value="answer2"
-        />
-        <label class="from-check-label" for="answerradio1">Jack Black</label>
-      </div>
-      <div class="form-check">
-        <input
-          class="form-check-input"
-          type="radio"
-          name="answerradio"
-          id="question5-3"
-          value="answer3"
-        />
-        <label class="from-check-label" for="answerradio1">Harrison Ford</label>
-      </div>
-      <div class="form-check">
-        <input
-          class="form-check-input"
-          type="radio"
-          name="answerradio"
-          id="question5-4"
-          value="answer4"
-        />
-        <label class="from-check-label" for="answerradio1">Herbet Ford</label>
-      </div>
-    </div>
-</div>
-
-    
       <div class="col-md-2"></div>
     </div>
     <script src="assets/javascript/app.js" type="text/javascript"></script>
