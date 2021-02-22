@@ -11,7 +11,7 @@ function countDown(i) {
 
 }
 
-countDown(10);
+countDown(19);
 
 window.setTimeout(function() {
     
